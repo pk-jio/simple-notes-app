@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="navbar">
+    Notes App
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="new-note" onclick="btnAnim(event, '#0000af', 'blue')">New</div>
+      <div class="side-list">
+        <!-- <p class="side-list-item">Apple</p> -->
+      </div>
+    </div>
+
+
+    <div class="welcome-note">Welcome to the Notes App.</div>
+    <div class="content">
+      <div class="menu">
+        <div class="save-note" onclick="btnAnim(event, 'green', '#00af00')">save</div>
+        <div class="delete-note" onclick="btnAnim(event, '#af0000', 'red')">delete</div>
+      </div>
+
+      <div class="user-note">
+        <input type="text" class="note-title" maxlength="50">
+        <textarea name="" id="" cols="30" rows="10" class="note-body"></textarea>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
